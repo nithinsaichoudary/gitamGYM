@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -8,99 +7,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>G-Sports</title>
     <link rel="shortcut icon" href="https://gsports.gitam.edu/assets/images/fav.png">
+    
     <!-- Bootstrap CSS -->
-    <link rel='stylesheet' href="https://gsports.gitam.edu/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://gsports.gitam.edu/assets/css/bootstrap.css">
     <link rel="stylesheet" href="https://gsports.gitam.edu/assets/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://gsports.gitam.edu/assets/css/jquery-ui.min.css">
-    <!--  <link rel='stylesheet' href="https://gsports.gitam.edu/assets/css/datepicker.css"/>
-    <link rel='stylesheet' href="https://gsports.gitam.edu/assets/css/fullcalendar.min.css"  />
-    <link rel='stylesheet' href='https://gsports.gitam.edu/assets/css/fullcalendar.print.min.css' media='print' />
-    <link rel="stylesheet" href="https://gsports.gitam.edu/assets/css/animate.css">
-    <link rel="stylesheet" href="https://gsports.gitam.edu/assets/css/jquery.mmenu.css" />  -->
-
     <link rel="stylesheet" href="https://gsports.gitam.edu/assets/css/style.css">
     <link rel="stylesheet" href="https://gsports.gitam.edu/assets/css/jquery-confirm.min.css">
-
     <link href="https://gsports.gitam.edu/assets/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
-
-    <script>
-        //setTimeout(function(){ window.location="https://gsports.gitam.edu/welcome/logout"; }, 600000);
-    </script>
 
     <style media="screen">
         hr {
             border-top: 3px solid #b2102f !important;
         }
-
         .main_box {
             padding: 50px;
             background: #fff;
         }
-
-
         .title-box {
             margin-top: 0px;
             text-align: center;
         }
-
         h2 {
-            /*color: #000;*/
-            /*font-size: 20px;*/
+            color: #000;
+            font-size: 20px;
         }
-
         .jconfirm-title {
             font-size: 18px !important;
         }
-
         .logout ul {
             list-style-type: none;
         }
-
-        /*
-        .logout ul li {
-            margin-top: 15px;
-        }
-*/
-
         .logout a {
             color: #007367;
         }
-    </style>
-    <style>
         label.error {
             color: red;
         }
-
         .chk_audit_par {
             position: relative;
         }
-
-        a.chk_audit {}
-
         .fa-check-circle-o {
             font-size: 33px;
             padding-right: 8px;
             color: green;
             margin-top: -7px;
         }
-
         .fc-other-month {
             background: #fff;
         }
-
-        /* .gc_box{
-            padding: 20px;
-            top:0;
-        } */
         form #terms {
             font-size: 12px;
         }
-
         input[type="date"].form-control,
         input[type="time"].form-control {
             line-height: 1.42857143;
         }
-
         .gc_box h3 {
             padding: 5px 0;
             text-align: center;
@@ -109,38 +71,30 @@
             color: #fff;
             margin-bottom: 10px;
         }
-
         #login-user {
             font-weight: 800;
             color: #b2102f;
         }
-
         .main_cal {
-            /* min-height: 100vh; */
+            min-height: 100vh;
         }
-
         .gen {
             margin-bottom: 20px;
             text-align: center;
             margin-top: -20px;
         }
-
         h3 {
             margin-bottom: 0px;
         }
-
         .chk {
             width: 125px;
         }
-
         label.error {
             color: red;
         }
-
         .chk_audit_par {
             position: relative;
         }
-
         .fa-check-circle-o {
             font-size: 33px;
             padding-right: 8px;
@@ -148,14 +102,12 @@
             margin-top: -7px;
         }
     </style>
-    <!-- <div class="line"></div> -->
     <style type="text/css">
         .navbar-default {
             background-color: #981f2b !important;
             border-color: #981f2b !important;
             box-shadow: 0 8px 20px 0 rgb(218 224 235 / 60%);
         }
-
         .wrapper {
             min-height: 100vh;
         }
@@ -164,452 +116,108 @@
 
 <body>
     <style>
-	header {
-		padding: 5px 0;
-		box-shadow: 0 8px 20px 0 rgb(218 224 235 / 60%);
-	}
-</style>
-<header style="padding:5px 0">
-	<div class="container">
-		<div class="row" style="display:flex; justify-content:center; align-items:center">
-			<div class="col-md-6 col-xs-12 col-lg-6">
-				<div class="cats-logo">
-					<!-- <a href="#"><img src="https://gsports.gitam.edu/assets/images/Gsports_logo.png" class="img-responsive"></a> -->
-					<a href="#"><img src="https://cdn.gitam.edu/images/logo/gitam-logo-circle.png" class="img-responsive">G-Sports</a>
-				</div>
-			</div>
-			<div class="col-md-6 col-xs-12 col-lg-6 logout">
-								<ul class="nav navbar-nav navbar-right">
-					<li><a href="javascript:window.history.back(0);"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-					<li><a href="https://gsports.gitam.edu/history"><i class="fa fa-history" aria-hidden="true"></i> History</a></li>
-					<li><a href="https://gsports.gitam.edu/welcome/logout">Logout <i class="fa fa-power-off"></i> </a></li>
-								</div>
-		</div>
-	</div>
-</header>    <div class="wrapper"><!-- <link rel="stylesheet" href="https://gsports.gitam.edu/assets/css/jquery-ui.css"> -->
-<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<style type="text/css">
-    .main_cal {
-        margin: 25px 0;
-        padding: 0px;
-        min-height: 100vh;
-    }
-
-    .title {
-        text-align: center;
-        /*color: #b1040e;*/
-    }
-
-    .box {
-        padding: 20px;
-        background: #FFFFFF;
-        box-shadow: 0 8px 20px 0 rgb(218 224 235 / 60%)
-    }
-
-    table {
-        font-size: 12px;
-    }
-
-    thead th {
-        background: #007367;
-        color: #fff;
-    }
-
-    .pagination>.active a,
-    .pagination>.active>a:hover {
-        background-color: #007367;
-        border-color: #007367;
-    }
-
-    .pagination>.active>a,
-    .pagination>.active>span,
-    .pagination>.active>a:hover,
-    .pagination>.active>span:hover,
-    .pagination>.active>a:focus,
-    .pagination>.active>span:focus {
-        z-index: 3;
-        color: #fff;
-        cursor: default;
-        background-color: #007367;
-        border-color: #007367;
-    }
-
-    table tr td {
-        text-align: center;
-    }
-</style>
-<!-- VSP -->
-<section class="history main_cal">
-    <div class="container-fluid">
-        <h2 class='title'>Reservation history</h2>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="box">
-                    <div class="table-responsive">
-                                                    <table class="table table-bordered" style="width:100%" id="history-table">
-                                <thead>
-                                    <tr>
-                                        <th style="text-align: center;">Reference no. </th>
-                                        <th style="text-align: center;">Stadium</th>
-                                        <th style="text-align: center;">Playground</th>
-                                        <th style="text-align: center;">Court</th>
-                                        <th style="text-align: center;">Reserved date</th>
-                                        <th style="text-align: center;">Time slot</th>
-                                        <th style="text-align: center;">Status</th>
-                                        <th style="text-align: center;">Remarks</th>
-                                        <th style="text-align: center;">Action</th>
-                                    </tr>
-                                </thead>
-                            </table>
-                                            </div>
-                    <!-- <div class="text-right"><sup>&#42;</sup><b>Note:</b> Y- Approved, W- Waiting for approval, N-  Rejected</div> -->
+        header {
+            padding: 5px 0;
+            box-shadow: 0 8px 20px 0 rgb(218 224 235 / 60%);
+        }
+    </style>
+    <header style="padding:5px 0">
+        <div class="container">
+            <div class="row" style="display:flex; justify-content:center; align-items:center">
+                <div class="col-md-6 col-xs-12 col-lg-6">
+                    <div class="cats-logo">
+                        <a href="#"><img src="https://cdn.gitam.edu/images/logo/gitam-logo-circle.png" class="img-responsive">G-Sports</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12 col-lg-6 logout">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="javascript:window.history.back(0);"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                        <li><a href="https://gsports.gitam.edu/history"><i class="fa fa-history" aria-hidden="true"></i> History</a></li>
+                        <li><a href="https://gsports.gitam.edu/welcome/logout">Logout <i class="fa fa-power-off"></i> </a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </header>
 
+    <div class="wrapper">
+        <section class="history main_cal">
+            <div class="container-fluid">
+                <h2 class='title'>Reservation history</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="box">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" style="width:100%" id="history-table">
+                                    <thead>
+                                        <tr>
+                                            <th style="text-align: center;">Reference no.</th>
+                                            <th style="text-align: center;">Stadium</th>
+                                            <th style="text-align: center;">Playground</th>
+                                            <th style="text-align: center;">Court</th>
+                                            <th style="text-align: center;">Reserved date</th>
+                                            <th style="text-align: center;">Time slot</th>
+                                            <th style="text-align: center;">Status</th>
+                                            <th style="text-align: center;">Remarks</th>
+                                            <th style="text-align: center;">Action</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<!-- Cancellation form -->
-<div id="dialog" title="Cancel request">
-    <form action="#" id="cancel-form">
-        <div class="form-group">
-            <label for="email">Reference number:</label>
-            <input type="text" class="form-control" id="regdno" name="regdno" readonly="">
+        <!-- Cancellation form -->
+        <div id="dialog" title="Cancel request">
+            <form action="#" id="cancel-form">
+                <div class="form-group">
+                    <label for="email">Reference number:</label>
+                    <input type="text" class="form-control" id="regdno" name="regdno" readonly="">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Reason:</label>
+                    <textarea class="form-control" id="remarks" name="remarks" maxlength="100" placeholder="(Enter remarks if any)"></textarea>
+                </div>
+                <input type="hidden" name="hidden-id" id="hidden-id">
+                <button type="submit" class="btn btn-primary" id="btn-cancel">Cancel</button>
+            </form>
         </div>
-        <div class="form-group">
-            <label for="pwd">Reason:</label>
-            <textarea class="form-control" id="remarks" name="remarks" maxlength="100" placeholder="(Enter remarks if any)"></textarea>
-        </div>
-        <input type="hidden" name="hidden-id" id="hidden-id">
-        <button type="submit" class="btn btn-primary" id="btn-cancel">Cancel</button>
-    </form>
-</div>
 
-
-<!-- <section>
-    <div class="container">
-        <a href="#" class="scrollup">Scroll</a>
+        <!-- Footer -->
+        <footer>
+            <section class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="text-center">
+                            Copyright &copy;2024 GITAM - All Rights Reserved.<br>
+                            Powered by CATS, GITAM
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
     </div>
-</section> -->
-<footer>
-	<section class="copyright">
-		<div class="container">
-			<div class="row">
-				<div class="text-center">
-					Copyright &copy;2024 GITAM - All Rights Reserved.<br>
-					Powered by CATS, GITAM
-				</div>
-				<!-- <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6  text-left"> </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6  text-right"></div> -->
-			</div>
-		</div>
-	</section>
-</footer>
-<!-- jQuery -->
 
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://gsports.gitam.edu/assets/js/jquery.js"></script>
+    <script type="text/javascript" src="https://gsports.gitam.edu/assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src='https://gsports.gitam.edu/assets/js/moment.min.js'></script>
+    <script type="text/javascript" src='https://gsports.gitam.edu/assets/js/fullcalendar.min.js'></script>
+    <script type="text/javascript" src="https://gsports.gitam.edu/assets/js/jquery.mmenu.js"></script>
+    <script type="text/javascript" src="https://gsports.gitam.edu/assets/js/jquery.easy-ticker.js"></script>
+    <script type="text/javascript" src="https://gsports.gitam.edu/assets/js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="https://gsports.gitam.edu/assets/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://gsports.gitam.edu/assets/js/additional-methods.js"></script>
+    <script type="text/javascript" src="https://gsports.gitam.edu/assets/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://gsports.gitam.edu/assets/js/jquery-confirm.min.js"></script>
+    <script src="https://gsports.gitam.edu/assets/vendor/datatables/jquery.dataTables.js"></script>
+    <script src="https://gsports.gitam.edu/assets/vendor/datatables/dataTables.bootstrap4.js"></script>
+    <script src="https://gsports.gitam.edu/assets/js/jquery.timepicker.min.js"></script>
 
-<script type="text/javascript" src="https://gsports.gitam.edu/assets/js/jquery.js"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script> -->
-<script type="text/javascript" src="https://gsports.gitam.edu/assets/js/bootstrap.min.js"></script>
-
-<script type="text/javascript" src='https://gsports.gitam.edu/assets/js/moment.min.js '></script>
-<script type="text/javascript" src='https://gsports.gitam.edu/assets/js/fullcalendar.min.js '></script>
-<script type="text/javascript" src="https://gsports.gitam.edu/assets/js/jquery.mmenu.js"></script>
-<script type="text/javascript" src="https://gsports.gitam.edu/assets/js/jquery.easy-ticker.js"></script>
-<script type="text/javascript" src="https://gsports.gitam.edu/assets/js/jquery.easing.min.js"></script>
-<!-- <script type="text/javascript" src="https://gsports.gitam.edu/assets/js/owl.carousel.js"></script> -->
-<!-- <script type="text/javascript" src="https://gsports.gitam.edu/assets/js/main.js"></script> -->
-<script type="text/javascript" src="https://gsports.gitam.edu/assets/js/jquery.validate.min.js"></script>
-<script type="text/javascript" src="https://gsports.gitam.edu/assets/js/additional-methods.js"></script>
-<!-- <script type="text/javascript" src="https://gsports.gitam.edu/assets/js/validations.js"></script> -->
-<script type="text/javascript" src="https://gsports.gitam.edu/assets/js/jquery-ui.min.js"></script>
-<script type="text/javascript" src="https://gsports.gitam.edu/assets/js/jquery-confirm.min.js"></script>
-
-<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
-<script src="https://gsports.gitam.edu/assets/vendor/datatables/jquery.dataTables.js"></script>
-<script src="https://gsports.gitam.edu/assets/vendor/datatables/dataTables.bootstrap4.js"></script>
-<script src="https://gsports.gitam.edu/assets/js/jquery.timepicker.min.js"></script>
-
-<script>
-	// $(document).ready(function() {
-	//
-	//     $("#boxscroll2").niceScroll("#contentscroll2", {
-	//         cursorcolor: "#4c5a8e",
-	//         cursoropacitymax: 0.7,
-	//         boxzoom: true,
-	//         touchbehavior: true
-	//     });
-	//     $("#boxscroll3").niceScroll("#contentscroll3", {
-	//         cursorcolor: "#4c5a8e",
-	//         cursoropacitymax: 0.7,
-	//         boxzoom: true,
-	//         touchbehavior: true
-	//     });
-	//
-	// });
-
-</script>
-<script>
-	$('ul.nav li.dropdown').hover(function() {
-		$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
-	}, function() {
-		$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
-	});
-
-</script>
-
-<script type="text/javascript">
-	window.onload = function() {
-		document.getElementById("alternate").innerHTML = formatDate();
-		document.getElementById("un-alternate").innerHTML = formatDate();
-
-		var datetopass = document.getElementById("alternate").innerHTML;
-		localStorage.setItem("datetopass", datetopass);
-
-		var selectedDate = document.getElementById("alternate").innerHTML;
-
-		//availability(selectedDate);
-		//unavailability(selectedDate);
-	}
-
-</script>
-
-
-<script type="text/javascript">
-	window.onload = function() {
-		var docHeight = $('window').height();
-		var footerHeight = $('footer').height();
-		var footerTop = $('footer').position().top + footerHeight;
-		//console.log("Footer top " + footerTop + "- " + docHeight);
-		if (footerTop < docHeight) {
-			$('footer').css('margin-top', (docHeight - footerTop) + 'px');
-			//console.log("in if")
-		}
-		// else{
-		//     console.log("in else")
-		// }
-	}
-
-</script>
-<script>
-	setTimeout(function() {
-		window.location = "https://gsports.gitam.edu/welcome/logout";
-	}, 600000);
-	$(function() {
-		$("#competition_from_date").datepicker({
-			minDate: 0,
-			dateFormat: 'dd-mm-yy',
-		});
-	});
-	$(function() {
-		$("#competition_to_date").datepicker({
-			minDate: 0,
-			dateFormat: 'dd-mm-yy',
-		});
-	});
-	$(function() {
-		$("#scholarship_from_date").datepicker({
-			minDate: 0,
-			dateFormat: 'dd-mm-yy',
-		});
-	});
-	$(function() {
-		$("#scholarship_to_date").datepicker({
-			minDate: 0,
-			dateFormat: 'dd-mm-yy',
-		});
-	});
-
-	$("#scholarship_details").validate({
-
-		/*  errorElement: 'span',
-		   errorClass: 'help-inline',*/
-		rules: {
-			"Name_of_Competition": {
-				required: true,
-			},
-			"event_type": {
-				required: true,
-			},
-			"Level_of_Competition": {
-				required: true,
-			},
-			"Medal": {
-				required: true,
-			},
-			"competition_from_date": {
-				required: true,
-			},
-			"competition_to_date": {
-				required: true,
-			},
-			"organized_by": {
-				required: true,
-			},
-			"upload_file": {
-				required: true,
-				minlength: 6,
-			},
-		},
-
-	});
-
-
-	$("form#scholarship_details").submit(function(e) {
-		e.preventDefault();
-		var formData = new FormData(this);
-		var IsValid = $("#scholarship_details").valid();
-		if (IsValid) {
-			$.ajax({
-				url: "https://gsports.gitam.edu/Welcome/save_scholarship",
-				type: 'POST',
-				data: formData,
-				cache: false,
-				contentType: false,
-				processData: false,
-				beforeSend: function() {
-					$("#save_btn").text("Please wait...").attr("disabled", true);
-				},
-				success: function(data) {
-					console.log(data);
-					$('#scholarship_details')[0].reset();
-					$("#save_btn").text("Sign Up").attr("disabled", false)
-					if ($.trim(data) == "true") {
-
-						var output = '<div class="bg-green-100 rounded-lg py-5 px-6 mb-3 text-base text-green-700 inline-flex items-center w-full" role="alert"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check-circle" class="w-4 h-4 mr-2 fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg> <strong>Success!</strong> Successfully Registered</div>';
-						//$('#result').html(output).fadeOut(12000);
-						setTimeout(function() {
-							window.location.href = "https://gsports.gitam.edu/scholorships";
-						}, 1000);
-
-
-
-					} else if ($.trim(data) == 'false') {
-
-						var output = '<div class="bg-yellow-100 rounded-lg py-5 px-6 mb-3 text-base text-yellow-700 inline-flex items-center w-full" role="alert"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="exclamation-triangle" class="w-4 h-4 mr-2 fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"></path></svg><strong>Warning!</strong> Registration failed</div>';
-
-						$('#result').html(output).fadeOut(12000);
-					}
-
-				},
-
-
-				complete: function() {
-
-				}
-			});
-		} else {
-			return false;
-		}
-	});
-
-</script>
-
-<script>
-	// Function to disable Shift and Ctrl keys
-	function disableShiftAndCtrlKeys(event) {
-		if (event.shiftKey || event.ctrlKey || event.key === "F12" || event.button === 2) {
-			event.preventDefault();
-		}
-	}
-
-	// Attach event listeners to intercept keydown events
-	document.addEventListener('keydown', disableShiftAndCtrlKeys);
-	document.addEventListener('mouseup', function(event) {
-		if (event.button === 2) {
-			event.preventDefault();
-		}
-	});
-
-	document.addEventListener('contextmenu', function(event) {
-		event.preventDefault();
-	});
-
-</script>
-
-</body>
-
-</html>
-
-<script type="text/javascript">
-    var table = $("#history-table").DataTable({
-        "ajax": 'https://gsports.gitam.edu/history/fetch_all_registrations',
-        "order": [
-            [0, "desc"]
-        ]
-    });
-</script>
-<script>
-    //$( function() {
-    $("#history-table").on("click", ".cancel-req", function(e) {
-        e.preventDefault();
-        var rowId = $(this).attr("id");
-        var regdno = $(this).data("id");
-        $("#regdno").val(regdno);
-        $("#hidden-id").val(rowId);
-        $("#dialog").dialog("open");
-    });
-    //});
-
-    $(function() {
-        $("#dialog").dialog({
-            autoOpen: false,
-            modal: true,
-            maxWidth: 600,
-            width: 600,
-            // show: {
-            //     effect: "blind",
-            //     duration: 1000
-            // },
-            // hide: {
-            //     effect: "explode",
-            //     duration: 1000
-            // },
-            close: function() {
-                //window.location.reload();
-            }
-        });
-    });
-</script>
-<script type="text/javascript">
-    $(function() {
-        $("#cancel-form").on("submit", function(e) {
-            e.preventDefault();
-            var regdno = $("#regdno").val();
-            var rowId = $("#hidden-id").val();
-            var remarks = $("#remarks").val();
-            $.ajax({
-                url: 'https://gsports.gitam.edu/history/cancel-request',
-                method: "POST",
-                data: {
-                    rowId: rowId,
-                    regdno: regdno,
-                    remarks: remarks
-                },
-                beforeSend: function() {
-                    $("#btn-cancel").html("Please wait...").attr("disabled", true);
-                },
-                success: function(data) {
-                    console.log(data);
-                    $("#btn-cancel").html("Cancel").attr("disabled", false);
-                    if (data == true) {
-                        $("#dialog").dialog("close");
-                        table.ajax.reload(null, false);
-                        $.alert({
-                            title: 'Success!',
-                            content: 'Your reservation has been cancelled!',
-                        });
-                    } else if (data == false) {
-                        $.alert({
-                            title: 'Alert!',
-                            content: 'Oops! Something went wrong',
-                        });
-                        return false;
-                    }
-
-                }
-            })
-        })
-    })
-</script>
+    <!-- Inline JS scripts -->
+    <script>
+        setTimeout(function() {
+            window.location = "https://gsports.gitam
